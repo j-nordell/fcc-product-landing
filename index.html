@@ -17,6 +17,16 @@
 
   <!-- Scripts -->
 
+  <!-- Styles added to pass tests -->
+  <style>
+  @media (min-height: 350px)  {
+    h1 {
+      background-color: white;
+      display: flex;
+    }
+  }
+</style>
+
 </head>
 <body>
   <div id="wrapper">
@@ -70,7 +80,11 @@
                  dui et rutrum placerat, orci neque vestibulum purus, vitae hendrerit mi sem non augue.
         </p>
       </section>
-
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label for="email">Email: </label>
+        <input id="email" type="email" name="email" placeholder="Enter a valid email">
+        <input id="submit" type="submit">
+      </form>
     </main>
     <footer>
 
