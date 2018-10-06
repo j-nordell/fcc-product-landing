@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/styles.css" type="text/css" title="global stylesheet"/>
 
   <!-- Fonts  -->
-
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <!-- Scripts -->
 
   <!-- Styles added to pass tests -->
@@ -29,11 +29,11 @@
 
 </head>
 <body>
-  <div id="wrapper">
+  <div class="wrapper">
     <header id="header">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Service_mark.svg/540px-Service_mark.svg.png" id="header-img">
       <nav id="nav-bar">
-        <ul>
+        <ul class="nav-list">
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#buy" class="nav-link">Buy</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -43,42 +43,26 @@
     <main>
       <section id="about">
         <h1>About our product</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit, eros sed fringilla cursus, 
-            odio eros mollis nisl, ac condimentum orci urna egestas neque. Pellentesque ac nunc sed justo
-             sollicitudin pharetra sit amet bibendum metus. Cras vitae felis et velit commodo elementum
-              ut eget augue. Vestibulum ut tempus dui, vitae auctor mauris. Cras sit amet malesuada augue,
-               ut vehicula lectus. Fusce vitae scelerisque nisi. Integer lacus quam, facilisis eget turpis ut, 
-               facilisis semper dolor. Ut semper sed lacus quis egestas. Orci varius natoque penatibus et 
-               magnis dis parturient montes, nascetur ridiculus mus.
-        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu vehicula odio. Sed vulputate eu lectus mattis lobortis.</p>
       </section>
       <div class="video-div">
-          <iframe id="video" width="897" height="673" src="https://www.youtube.com/embed/PWpBvceDyM4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <iframe id="video" src="https://www.youtube.com/embed/PWpBvceDyM4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <section id="buy">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at turpis quis nulla pulvinar 
-            fringilla eu sed dui. Vivamus vulputate nisi lorem, a ornare nunc efficitur eget. Nulla eu 
-            ligula a nisi pharetra efficitur. Praesent arcu odio, ornare ut condimentum sed, pulvinar et metus. 
-            Integer feugiat lorem ac iaculis accumsan. Donec vitae mi nec mi pretium commodo a at odio. 
-            Integer tincidunt nulla eget semper laoreet. Sed vel placerat eros. Suspendisse elementum est 
-            commodo, venenatis nisl ullamcorper, placerat sapien. Vivamus quis tellus et quam consectetur 
-            condimentum sed sed nulla. Praesent diam leo, rhoncus sit amet tempus sit amet, dignissim sed
-            sem. Nullam ullamcorper molestie commodo.
-        </p>
+        <div class="pay1">
+          <h2>$15/month</h2>
+          <p>Subscriptions can be cancelled anytime.</p>
+          <button>Buy now</button>
+        </div>
+        <div class="pay2">
+          <h2>$125/year</h2>
+          <span>Save $55!</span>
+          <p>This is our best deal yet!</p>
+          <button>Buy now</button>
+        </div>
       </section>
       <section id="contact">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam est dui, venenatis vitae
-             euismod sed, condimentum non nibh. Vestibulum dictum ligula molestie, rhoncus lacus at, 
-             varius lorem. Quisque ultrices non mi quis tempor. Sed lorem nulla, suscipit faucibus velit ac,
-              pellentesque bibendum ipsum. Vivamus vel tortor purus. Aliquam erat volutpat. Donec a 
-              venenatis nulla. Quisque eget ultricies odio. Vestibulum ante ipsum primis in faucibus
-               orci luctus et ultrices posuere cubilia Curae; Curabitur aliquet sed purus eu aliquet.
-                Nullam viverra rutrum mauris sit amet hendrerit. Nulla non tincidunt diam. Nam congue,
-                 dui et rutrum placerat, orci neque vestibulum purus, vitae hendrerit mi sem non augue.
-        </p>
+        <p>Nulla ac suscipit lorem, varius eleifend mi. Maecenas posuere ante quis condimentum rhoncus. Pellentesque semper rhoncus enim non condimentum. Aenean lacinia, velit nec porttitor iaculis, nibh libero dictum nibh, nec posuere ipsum felis eget dolor. Praesent sit amet tempus libero. Donec tincidunt leo elit, id blandit urna porta quis. Sed ipsum sem, viverra at nisl sit amet, condimentum ullamcorper sem. Donec quis leo augue. Nunc id nisi ut urna convallis blandit. Phasellus sed leo aliquam, pharetra diam vitae, fringilla nulla. Mauris nulla nulla, volutpat in pretium ut, fringilla vel neque. Donec auctor venenatis urna, non dictum sapien commodo eget. Vestibulum risus orci, ultricies quis eros id, sollicitudin vulputate lacus. Cras in ultricies eros. In auctor nisl ut hendrerit ultricies. Mauris sagittis venenatis quam, at aliquet felis eleifend non.</p>
       </section>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <label for="email">Email: </label>
@@ -86,9 +70,6 @@
         <input id="submit" type="submit">
       </form>
     </main>
-    <footer>
-
-    </footer>
   </div>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>

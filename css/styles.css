@@ -1,8 +1,88 @@
+/* Variables */
+
+:root {
+   --main-bg-color: #fefefe;
+   --main-deco-color: #0dcf07;
+   --secondary-deco-color: #1f1d1d;
+}
+
 * {
   font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  max-width: 100vw;
+  height: 100%;
+  background-color: var(--secondary-deco-color);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 250px repeat(5, 1fr);
+  width: 92%;
+  margin: 20px auto;
+  background-color: var(--main-bg-color);
+  grid-template-areas:
+  "header"
+  "about"
+  "video"
+  "buy"
+  "contact"
+  "form";
 }
 
 #header {
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  grid-area: header;
+}
+
+#header-img {
+ width: 50%;
+}
+
+
+.nav-list {
+  list-style-type: none;
+  justify-items: flex-end;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.nav-list li {
+  display: inline-block;
+  background-color: var(--main-deco-color);
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+ 
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--main-bg-color);
+}
+.nav-link:hover {
+  text-decoration: none;
+}
+
+#about {
+  grid-area: about;
+}
+
+#video {
+  grid-area: video;
+}
+
+#buy {
+ grid-area: buy;
+}
+
+#contact {
+ grid-area: contact;
+}
+
+form {
+ grid-area: form;
 }
